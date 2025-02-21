@@ -65,9 +65,6 @@ public class Withdraw
     		withdrawMoney(AccountNumber, withdrawAmount);
     		TransactionHistory th = new TransactionHistory();
     		th.saveTransactionToDatabase(AccountNumber, "Withdraw", withdrawAmount);
-//    		transactionHistory.add(" WITHDRAW "+withdrawAmount);
-//    		System.out.println("WITHDRAW SUCCESSFULL - AVAILABLE BALANCE = "+initialBalance);
-//    		updateBalanceInDatabase();
     	}
     	else 
     	{

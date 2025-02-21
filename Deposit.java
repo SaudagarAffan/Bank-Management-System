@@ -20,7 +20,7 @@ public class Deposit
 	        getBalanceStmt.setString(1, accountNumber);
 	        ResultSet rs = getBalanceStmt.executeQuery();
 
-	        if (rs.next())  // check the account is exist or not 
+	        if (rs.next())  
 	        {
 	            double currentBalance = rs.getDouble("Balance");
 
@@ -51,15 +51,4 @@ public class Deposit
 	        e.printStackTrace();
 	    }
 	}
-//--------------------------------------------------------------------------------------------------------
-	public void deposit(double depositAmount , String AccountNumber)
-    {
-//    	 initialBalance = depositAmount;
-//    	transactionHistory.add("DEPOSITED = " + depositAmount);
-//    	System.out.println("DEPOSIT SUCCESSFULL - AVAILABLE BALANCE = "+initialBalance);
-    	depositMoney(AccountNumber, depositAmount);
-//    	saveTransactionToDatabase(AccountNumber, "Deposit", depositAmount);
-    }
 }
-
-

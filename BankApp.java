@@ -14,7 +14,6 @@ public class BankApp
 	private String AccountHolder;
 	private static double initialBalance;
 	
-//	private ArrayList<String> transactionHistory = new ArrayList<>();  // For Transaction History
 	static HashMap<String , BankApp> accounts = new HashMap<String , BankApp>(); //For store all accounts
 	
 	

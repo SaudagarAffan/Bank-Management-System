@@ -51,4 +51,10 @@ public class Deposit
 	        e.printStackTrace();
 	    }
 	}
+
+	public void deposit(double depositAmount, String depositacc) 
+	{
+		depositMoney(depositacc, depositAmount);
+		
+	}
 }
